@@ -1,5 +1,5 @@
 const PiranhaMessage = require('../../PiranhaMessage')
-const SearchPlayerMessage = require('../Server/SearchPlayerMessage')
+const PlayerProfileMessage = require('../Server/PlayerProfileMessage')
 
 class AskForPlayerProfileMessage extends PiranhaMessage {
   constructor (bytes, client) {
@@ -12,7 +12,7 @@ class AskForPlayerProfileMessage extends PiranhaMessage {
   async decode () {}
 
   async process () {
-    await new SearchPlayerMessage(this.client).send()
+    await new PlayerProfileMessage(this.client).send()
   }
 }
 

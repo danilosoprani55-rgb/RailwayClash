@@ -1,11 +1,11 @@
 const PiranhaMessage = require('../../PiranhaMessage')
 const EnemyHomeDataMessage = require('../Server/EnemyHomeDataMessage')
 
-class Unknown14309 extends PiranhaMessage {
+class EndClientTurnMessage extends PiranhaMessage {
   constructor (bytes, client) {
     super(bytes)
     this.client = client
-    this.id = 14309
+    this.id = 18072
     this.version = 1
   }
 
@@ -16,4 +16,4 @@ class Unknown14309 extends PiranhaMessage {
   }
 }
 
-module.exports = Unknown14309
+module.exports = EndClientTurnMessage

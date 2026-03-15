@@ -20,7 +20,7 @@ class LoginMessage extends PiranhaMessage {
     this.data.Build = this.readVInt()
     this.data.Content = this.readVInt()
 
-    //console.log(this.data)
+    console.log(this.data)
   }
 
   async process () {

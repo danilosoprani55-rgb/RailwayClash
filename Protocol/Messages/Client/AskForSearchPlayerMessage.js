@@ -1,7 +1,7 @@
 const PiranhaMessage = require('../../PiranhaMessage')
 const PlayerProfileMessage = require('../Server/PlayerProfileMessage')
 
-class AskForPlayerProfileMessage extends PiranhaMessage {
+class AskForSearchPlayerMessage extends PiranhaMessage {
   constructor (bytes, client) {
     super(bytes)
     this.client = client
@@ -16,4 +16,4 @@ class AskForPlayerProfileMessage extends PiranhaMessage {
   }
 }
 
-module.exports = AskForPlayerProfileMessage
+module.exports = AskForSearchPlayerMessage

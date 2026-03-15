@@ -1,7 +1,7 @@
 const PiranhaMessage = require('../../PiranhaMessage')
-const AllianceStreamMessage = require('../Server/AllianceStreamMessage')
+const AllianceDataMessage = require('../Server/AllianceDataMessage')
 
-class AskForAllianceStreamMessage extends PiranhaMessage {
+class AskForAllianceDataMessage extends PiranhaMessage {
   constructor (bytes, client) {
     super(bytes)
     this.client = client
@@ -12,8 +12,8 @@ class AskForAllianceStreamMessage extends PiranhaMessage {
   async decode () {}
 
   async process () {
-    await new AllianceStreamMessage(this.client).send()
+    await new AllianceDataMessage(this.client).send()
   }
 }
 
-module.exports = AskForAllianceStreamMessage
+module.exports = AskForAllianceDataMessage
