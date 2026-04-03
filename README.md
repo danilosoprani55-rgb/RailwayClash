@@ -5,7 +5,7 @@ Private server emulator for Clash of Clans 18.200.9 (2026) written on Node.js
 * [Node.js](https://nodejs.org)
 
 ## Setup
-1. Download the repository by zip or type this into the Terminal: `git clone https://github.com/Greedycell/26Clash.git`
+1. Download the repository by zip or type this into the Terminal: `git clone https://github.com/vertexscmods/VertexClash.git`
 2. Go into Command Prompt or Terminal and type `npm install` to build the server.
 3. Go into Command Prompt or Terminal and type `node .` to start the server.
 4. Now it is finished and you can download my [client](https://mega.nz/folder/Zv8zBZLC#dImyLPv-Zlape7wly4el8A).
