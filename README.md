@@ -1,4 +1,4 @@
-# 26Clash
+# VertexClash
 Private server emulator for Clash of Clans 18.200.9 (2026) written on Node.js
 
 ## Requirements
